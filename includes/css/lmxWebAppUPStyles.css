@@ -1,0 +1,21 @@
+.lmx-noPersonalOffers .loymax-menu-item.personal-offers,
+.lmx-noPersonalGoods .loymax-menu-item.personal-goods {
+    display: none;
+}
+.lmx-hasMessages .loymax-menu-item.message::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left: -27px;
+    border-radius: 50%;
+    background-color: red;
+    transform: translateY(-50%) translateX(7px);
+}
+
+@media screen and (max-width: 48em) {
+    .lmx-hasMessages .loymax-menu-item.message::before {
+        left: -20px;
+    }
+}
